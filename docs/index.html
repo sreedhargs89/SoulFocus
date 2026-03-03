@@ -13,21 +13,25 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
         rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body>
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="progressBar"></div>
+    </div>
     <div class="glow-orb"></div>
     <div class="glow-orb-2"></div>
 
-    <nav class="navbar">
+    <nav class="navbar fade-in">
         <div class="logo">
-            <span class="sparkle">✨</span> SoulFocus
+            <i data-feather="sun" class="icon-saffron"></i> SoulFocus
         </div>
-        <a href="#features" class="nav-link">Features</a>
+        <a href="#features" class="nav-link">Discover</a>
     </nav>
 
     <header class="hero">
-        <div class="hero-content">
+        <div class="hero-content fade-in">
             <h1 class="hero-title">Your sacred journey continues.</h1>
             <p class="hero-subtitle">A beautifully crafted sanctuary designed by Apple design standards for Meditation,
                 Prayer, and Chanting.</p>
@@ -73,9 +77,9 @@
 
     <section id="features" class="detailed-features">
         <!-- Meditation -->
-        <div class="feature-row">
+        <div class="feature-row fade-in">
             <div class="feature-text">
-                <span class="feature-badge">Inner Stillness</span>
+                <span class="feature-badge"><i data-feather="wind"></i> Inner Stillness</span>
                 <h2>Meditation & Breathwork</h2>
                 <p>Find your center with highly customizable meditation sessions designed to anchor your mind and relax
                     your nervous system. Whether you have one minute or one hour, SoulFocus adapts to your needs.</p>
@@ -95,9 +99,9 @@
         </div>
 
         <!-- Prayer -->
-        <div class="feature-row reverse">
+        <div class="feature-row reverse fade-in">
             <div class="feature-text">
-                <span class="feature-badge">Devotion</span>
+                <span class="feature-badge"><i data-feather="heart"></i> Devotion</span>
                 <h2>Sacred Prayer Traditions</h2>
                 <p>Speak from the heart. SoulFocus deeply respects and honors the world's great faith paths, offering
                     beautifully curated prayer texts spanning all major spiritual traditions.</p>
@@ -118,9 +122,9 @@
         </div>
 
         <!-- Chanting -->
-        <div class="feature-row">
+        <div class="feature-row fade-in">
             <div class="feature-text">
-                <span class="feature-badge">Vibration</span>
+                <span class="feature-badge"><i data-feather="activity"></i> Vibration</span>
                 <h2>Mantra & Chanting</h2>
                 <p>Elevate your spiritual frequency by chanting sacred names. Experience the rhythmic power of ancient
                     sounds designed to align your mind, body, and spirit.</p>
@@ -143,16 +147,50 @@
     </section>
 
     <footer>
-        <p>© 2026 SoulFocus. Crafted with intention and peace.</p>
+        <p>© 2026 SoulFocus. Peace in all directions.</p>
     </footer>
 
     <script>
-        // Simple parallax effect on scroll for the background orbs
-        window.addEventListener('scroll', () => {
-            const scrollY = window.scrollY;
-            document.querySelector('.glow-orb').style.transform = `translateY(${scrollY * 0.2}px)`;
-            document.querySelector('.glow-orb-2').style.transform = `translateY(${scrollY * -0.1}px)`;
+        // Initialize Feather icons
+        feather.replace();
+
+        // Scroll Progress Bar
+        window.onscroll = function () {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("progressBar").style.width = scrolled + "%";
+
+            // Orbs Parallax
+            document.querySelector('.glow-orb').style.transform = `translateY(${winScroll * 0.15}px)`;
+            document.querySelector('.glow-orb-2').style.transform = `translateY(${winScroll * -0.05}px)`;
+        };
+
+        // Intersection Observer for Fade-In animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach((el) => {
+            observer.observe(el);
         });
+
+        // Trigger initial phone hover animation programmatically on load for effect
+        setTimeout(() => {
+            document.querySelector('.phone-mockup').classList.add('floating');
+        }, 500);
+
     </script>
 </body>
 
