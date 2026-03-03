@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoulFocus | Your Sacred Journey</title>
+    <meta name="description" content="SoulFocus is a premium mindfulness and spiritual app featuring meditation, prayer, and chanting. Find your rhythm.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glow-orb"></div>
+    <div class="glow-orb-2"></div>
+    
+    <nav class="navbar">
+        <div class="logo">
+            <span class="sparkle">✨</span> SoulFocus
+        </div>
+        <a href="#features" class="nav-link">Features</a>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Your sacred journey continues.</h1>
+            <p class="hero-subtitle">A beautifully crafted sanctuary designed by Apple design standards for Meditation, Prayer, and Chanting.</p>
+            <button class="cta-button">Coming Soon to iOS</button>
+        </div>
+        
+        <div class="hero-visual">
+            <div class="phone-mockup">
+                <div class="phone-screen">
+                    <div class="app-header">
+                        <h2>Good Evening 🌙</h2>
+                        <p>Peace be with you.</p>
+                    </div>
+                    <div class="app-quote">
+                        <div class="quote-line"></div>
+                        <div>
+                            <p class="quote-text">"You are not a drop in the ocean. You are the entire ocean in a drop."</p>
+                            <p class="quote-author">— Rumi</p>
+                        </div>
+                    </div>
+                    <div class="app-stats">
+                        <div class="stat-hero">
+                            <span class="flame">🔥</span>
+                            <h3>12</h3>
+                            <p>Day Streak</p>
+                        </div>
+                        <div class="stat-side">
+                            <div class="stat-small">
+                                <h4>48</h4>
+                                <p>Sessions</p>
+                            </div>
+                            <div class="stat-small">
+                                <h4>14h 20m</h4>
+                                <p>Practiced</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="features">
+        <div class="feature-card">
+            <div class="feature-icon">🌿</div>
+            <h3>Meditation</h3>
+            <p>Engage in guided breathing exercises and ambient soundscapes to center your mind and spirit.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🙏</div>
+            <h3>Prayer</h3>
+            <p>Speak from the heart. Access sacred traditions and beautiful prayers spanning all major faiths.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">📿</div>
+            <h3>Chanting</h3>
+            <p>Find your rhythm and elevate your vibration with zero-gap audio loops of timeless mantras.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 SoulFocus. Crafted with intention and peace.</p>
+    </footer>
+
+    <script>
+        // Simple parallax effect on scroll for the background orbs
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            document.querySelector('.glow-orb').style.transform = `translateY(${scrollY * 0.2}px)`;
+            document.querySelector('.glow-orb-2').style.transform = `translateY(${scrollY * -0.1}px)`;
+        });
+    </script>
+</body>
+</html>
