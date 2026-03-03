@@ -1,0 +1,247 @@
+2026-03-03 12:01:05 +0000 [MT] Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0xaee87e700; archive(resolved)="<IDEArchive: 0xaee833640>", distributionTask(resolved)="2", distributionDestination(resolved)="1", distributionMethod(resolved)="<IDEDistributionMethodDevelopmentSigned: 0xaec814230>", team(resolved)="<IDEProvisioningBasicTeam: 0xaee984000; teamID='D2RFC4HAQ4', teamName='(null)'>">
+	Chain (14, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0xaee87e700; archive = "<IDEArchive: 0xaee833640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xaec814230>", team="<IDEProvisioningBasicTeam: 0xaee984000; teamID='D2RFC4HAQ4', teamName='(null)'>">
+	<IDEDistributionProcessingPipelineContext: 0xaee87e400; archive = "<IDEArchive: 0xaee833640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xaec814230>", team="<IDEProvisioningBasicTeam: 0xaee984000; teamID='D2RFC4HAQ4', teamName='(null)'>">
+	<IDEDistributionContext: 0xaee8b2800; archive = "<IDEArchive: 0xaee833640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xaec814230>", team="<IDEProvisioningBasicTeam: 0xaee984000; teamID='D2RFC4HAQ4', teamName='(null)'>">
+	<IDEDistributionContext: 0xaee8b2300; archive = "<IDEArchive: 0xaee833640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xaec814230>", team="<IDEProvisioningBasicTeam: 0xaee984000; teamID='D2RFC4HAQ4', teamName='(null)'>">
+	<IDEDistributionContext: 0xaee8b2080; archive = "<IDEArchive: 0xaee833640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xaec814230>", team="<IDEProvisioningBasicTeam: 0xaee984000; teamID='D2RFC4HAQ4', teamName='(null)'>">
+	<IDEDistributionContext: 0xaee8b1e00; archive = "<IDEArchive: 0xaee833640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xaec814230>", team="<IDEProvisioningBasicTeam: 0xaee984000; teamID='D2RFC4HAQ4', teamName='(null)'>">
+	<IDEDistributionContext: 0xaee8b1b80; archive = "<IDEArchive: 0xaee833640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xaec814230>", team="<IDEProvisioningBasicTeam: 0xaee984000; teamID='D2RFC4HAQ4', teamName='(null)'>">
+	<IDEDistributionContext: 0xaee8b1900; archive = "<IDEArchive: 0xaee833640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xaec814230>", team="<IDEProvisioningBasicTeam: 0xaee984000; teamID='D2RFC4HAQ4', teamName='(null)'>">
+	<IDEDistributionContext: 0xaee8b1680; archive = "<IDEArchive: 0xaee833640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xaec814230>", team="<IDEProvisioningBasicTeam: 0xaee984000; teamID='D2RFC4HAQ4', teamName='(null)'>">
+	<IDEDistributionContext: 0xaee8b1400; archive = "<IDEArchive: 0xaee833640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xaec814230>", team="(null)">
+	<IDEDistributionContext: 0xaee8b1180; archive = "<IDEArchive: 0xaee833640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xaec814230>", team="(null)">
+	<IDEDistributionContext: 0xaee8b0f00; archive = "<IDEArchive: 0xaee833640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xaec814230>", team="(null)">
+	<IDEDistributionContext: 0xaee8b0280; archive = "<IDEArchive: 0xaee833640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xaec814230>", team="(null)">
+	<IDEDistributionContext: 0x104c6cfa0; archive = "<IDEArchive: 0xaee833640>", distributionMethod="(null)", team="(null)">
+</IDEDistributionProcessingPipelineContext: 0xaee87e700>
+2026-03-03 12:01:05 +0000 [MT] Processing step: IDEDistributionCreateDestRootStep
+2026-03-03 12:01:05 +0000 [MT] Processing step: IDEDistributionCopyItemStep
+2026-03-03 12:01:05 +0000 [MT] Running /usr/bin/ditto '-V' '/Users/sree/dev/SoulFocus/build/SoulFocus.xcarchive/Products/Applications/SoulFocus.app' '/var/folders/b1/tcs0zjss6lb5bywwd37njdd00000gn/T/XcodeDistPipeline.~~~Fmd3CG/Root/Payload/SoulFocus.app'
+2026-03-03 12:01:05 +0000  >>> Copying /Users/sree/dev/SoulFocus/build/SoulFocus.xcarchive/Products/Applications/SoulFocus.app 
+2026-03-03 12:01:05 +0000  copying file ./_CodeSignature/CodeResources ... 
+2026-03-03 12:01:05 +0000  5701 bytes for ./_CodeSignature/CodeResources
+2026-03-03 12:01:05 +0000  copying file ./SoulFocus ... 
+2026-03-03 12:01:05 +0000  453712 bytes for ./SoulFocus
+2026-03-03 12:01:05 +0000  copying file ./Krishna.mp3 ... 
+2026-03-03 12:01:05 +0000  499586 bytes for ./Krishna.mp3
+2026-03-03 12:01:05 +0000  copying file ./PlugIns/SoulFocusMonitor.appex/_CodeSignature/CodeResources ... 
+2026-03-03 12:01:05 +0000  2040 bytes for ./PlugIns/SoulFocusMonitor.appex/_CodeSignature/CodeResources
+2026-03-03 12:01:05 +0000  copying file ./PlugIns/SoulFocusMonitor.appex/SoulFocusMonitor ... 
+2026-03-03 12:01:05 +0000  86896 bytes for ./PlugIns/SoulFocusMonitor.appex/SoulFocusMonitor
+2026-03-03 12:01:05 +0000  copying file ./PlugIns/SoulFocusMonitor.appex/embedded.mobileprovision ... 
+2026-03-03 12:01:05 +0000  12621 bytes for ./PlugIns/SoulFocusMonitor.appex/embedded.mobileprovision
+2026-03-03 12:01:05 +0000  copying file ./PlugIns/SoulFocusMonitor.appex/Info.plist ... 
+2026-03-03 12:01:05 +0000  994 bytes for ./PlugIns/SoulFocusMonitor.appex/Info.plist
+2026-03-03 12:01:05 +0000  copying file ./BUILD_AND_DISTRIBUTE.md ... 
+2026-03-03 12:01:05 +0000  8607 bytes for ./BUILD_AND_DISTRIBUTE.md
+2026-03-03 12:01:05 +0000  copying file ./SoulFocus.momd/VersionInfo.plist ... 
+2026-03-03 12:01:05 +0000  532 bytes for ./SoulFocus.momd/VersionInfo.plist
+2026-03-03 12:01:05 +0000  copying file ./SoulFocus.momd/SoulFocus.omo ... 
+2026-03-03 12:01:05 +0000  16552 bytes for ./SoulFocus.momd/SoulFocus.omo
+2026-03-03 12:01:05 +0000  copying file ./SoulFocus.momd/SoulFocus.mom ... 
+2026-03-03 12:01:05 +0000  7612 bytes for ./SoulFocus.momd/SoulFocus.mom
+2026-03-03 12:01:05 +0000  copying file ./ERRORS_FIXED_README.md ... 
+2026-03-03 12:01:05 +0000  4309 bytes for ./ERRORS_FIXED_README.md
+2026-03-03 12:01:05 +0000  copying file ./Gayatri.mp3 ... 
+2026-03-03 12:01:05 +0000  220147 bytes for ./Gayatri.mp3
+2026-03-03 12:01:05 +0000  copying file ./BUILD_STEPS.md ... 
+2026-03-03 12:01:05 +0000  7623 bytes for ./BUILD_STEPS.md
+2026-03-03 12:01:05 +0000  copying file ./FIX_ERRORS.md ... 
+2026-03-03 12:01:05 +0000  5944 bytes for ./FIX_ERRORS.md
+2026-03-03 12:01:05 +0000  copying file ./Shivay.mp3 ... 
+2026-03-03 12:01:05 +0000  643903 bytes for ./Shivay.mp3
+2026-03-03 12:01:05 +0000  copying file ./Om.mp3 ... 
+2026-03-03 12:01:05 +0000  362507 bytes for ./Om.mp3
+2026-03-03 12:01:05 +0000  copying file ./embedded.mobileprovision ... 
+2026-03-03 12:01:05 +0000  13096 bytes for ./embedded.mobileprovision
+2026-03-03 12:01:05 +0000  copying file ./Info.plist ... 
+2026-03-03 12:01:05 +0000  1252 bytes for ./Info.plist
+2026-03-03 12:01:05 +0000  copying file ./PkgInfo ... 
+2026-03-03 12:01:05 +0000  8 bytes for ./PkgInfo
+2026-03-03 12:01:05 +0000 [MT] /usr/bin/ditto exited with 0
+2026-03-03 12:01:05 +0000 [MT] Processing step: IDEDistributionEmbedProfileStep
+2026-03-03 12:01:05 +0000 [MT] Processing step: IDEDistributionInfoPlistStep
+2026-03-03 12:01:05 +0000 [MT] Skipping step: IDEDistributionInfoPlistStep because it said so
+2026-03-03 12:01:05 +0000 [MT] Skipping step: IDEDistributionInfoPlistStep because it said so
+2026-03-03 12:01:05 +0000 [MT] Processing step: IDEDistributionAppThinningPlistStep
+2026-03-03 12:01:05 +0000 [MT] Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2026-03-03 12:01:05 +0000 [MT] Processing step: IDEDistributionSymbolsStep
+2026-03-03 12:01:05 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2026-03-03 12:01:05 +0000 [MT] Processing step: IDEDistributionAppThinningStep
+2026-03-03 12:01:05 +0000 [MT] Skipping step: IDEDistributionAppThinningStep because it said so
+2026-03-03 12:01:05 +0000 [MT] Processing step: IDEDistributionArchThinningStep
+2026-03-03 12:01:05 +0000 [MT] Archs to thin for item /Users/sree/dev/SoulFocus/build/SoulFocus.xcarchive/Products/Applications/SoulFocus.app/PlugIns/SoulFocusMonitor.appex are []
+2026-03-03 12:01:05 +0000 [MT] Archs to thin for item /Users/sree/dev/SoulFocus/build/SoulFocus.xcarchive/Products/Applications/SoulFocus.app are []
+2026-03-03 12:01:05 +0000 [MT] Processing step: IDEDistributionODRStep
+2026-03-03 12:01:05 +0000 [MT] Processing step: IDEDistributionStripXattrsStep
+2026-03-03 12:01:05 +0000 [MT] Skipping stripping extended attributes because the codesign step will strip them.
+2026-03-03 12:01:05 +0000 [MT] Skipping stripping extended attributes because the codesign step will strip them.
+2026-03-03 12:01:05 +0000 [MT] Processing step: IDEDistributionCodesignStep
+2026-03-03 12:01:05 +0000 [MT] Entitlements for <IDEDistributionItem: 0xaebdae940; bundleID='com.soulfocus.app.SoulFocus.SoulFocusMonitor', path='<DVTFilePath:0xaee8d0850:'/Users/sree/dev/SoulFocus/build/SoulFocus.xcarchive/Products/Applications/SoulFocus.app/PlugIns/SoulFocusMonitor.appex'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xaebdae8e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xaebec4240; name='Apple Development: sreedhargs1000@gmail.com (JN2M9WZGB8)', hash='C843AE3ED6A7DE7E8526F8A1A7F7F651F9449B5A', serialNumber='1208D070806467F0D457B29A3A6565F0', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-03-03 00:57:32 +0000''>', entitlements='{
+    "application-identifier" = "D2RFC4HAQ4.com.soulfocus.app.SoulFocus.SoulFocusMonitor";
+    "com.apple.developer.family-controls" = 1;
+    "com.apple.developer.team-identifier" = D2RFC4HAQ4;
+    "get-task-allow" = 1;
+}', teamID='D2RFC4HAQ4', identifier='com.soulfocus.app.SoulFocus.SoulFocusMonitor', executablePath='<DVTFilePath:0xaee8d09a0:'/Users/sree/dev/SoulFocus/build/SoulFocus.xcarchive/Products/Applications/SoulFocus.app/PlugIns/SoulFocusMonitor.appex/SoulFocusMonitor'>', hardenedRuntime='0'>'>: {
+    "application-identifier" = "D2RFC4HAQ4.com.soulfocus.app.SoulFocus.SoulFocusMonitor";
+    "com.apple.developer.family-controls" = 1;
+    "com.apple.developer.team-identifier" = D2RFC4HAQ4;
+    "get-task-allow" = 1;
+}
+2026-03-03 12:01:05 +0000 [MT] Associated App Clip Identifiers Filter: Skipping because "com.apple.developer.associated-appclip-app-identifiers" is not present
+2026-03-03 12:01:05 +0000 [MT] Entitlements for <IDEDistributionItem: 0xaebdae940; bundleID='com.soulfocus.app.SoulFocus.SoulFocusMonitor', path='<DVTFilePath:0xaee8d0850:'/Users/sree/dev/SoulFocus/build/SoulFocus.xcarchive/Products/Applications/SoulFocus.app/PlugIns/SoulFocusMonitor.appex'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xaebdae8e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xaebec4000; name='Apple Development: sreedhargs1000@gmail.com (JN2M9WZGB8)', hash='C843AE3ED6A7DE7E8526F8A1A7F7F651F9449B5A', serialNumber='1208D070806467F0D457B29A3A6565F0', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-03-03 00:57:32 +0000''>', entitlements='{
+    "application-identifier" = "D2RFC4HAQ4.com.soulfocus.app.SoulFocus.SoulFocusMonitor";
+    "com.apple.developer.family-controls" = 1;
+    "com.apple.developer.team-identifier" = D2RFC4HAQ4;
+    "get-task-allow" = 1;
+}', teamID='D2RFC4HAQ4', identifier='com.soulfocus.app.SoulFocus.SoulFocusMonitor', executablePath='<DVTFilePath:0xaee8d09a0:'/Users/sree/dev/SoulFocus/build/SoulFocus.xcarchive/Products/Applications/SoulFocus.app/PlugIns/SoulFocusMonitor.appex/SoulFocusMonitor'>', hardenedRuntime='0'>'> are: {
+    "application-identifier" = "D2RFC4HAQ4.com.soulfocus.app.SoulFocus.SoulFocusMonitor";
+    "com.apple.developer.family-controls" = 1;
+    "com.apple.developer.team-identifier" = D2RFC4HAQ4;
+    "get-task-allow" = 1;
+}
+2026-03-03 12:01:05 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0xaebdae940; bundleID='com.soulfocus.app.SoulFocus.SoulFocusMonitor', path='<DVTFilePath:0xaee8d0850:'/Users/sree/dev/SoulFocus/build/SoulFocus.xcarchive/Products/Applications/SoulFocus.app/PlugIns/SoulFocusMonitor.appex'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xaebdae8e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xaebec4000; name='Apple Development: sreedhargs1000@gmail.com (JN2M9WZGB8)', hash='C843AE3ED6A7DE7E8526F8A1A7F7F651F9449B5A', serialNumber='1208D070806467F0D457B29A3A6565F0', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-03-03 00:57:32 +0000''>', entitlements='{
+    "application-identifier" = "D2RFC4HAQ4.com.soulfocus.app.SoulFocus.SoulFocusMonitor";
+    "com.apple.developer.family-controls" = 1;
+    "com.apple.developer.team-identifier" = D2RFC4HAQ4;
+    "get-task-allow" = 1;
+}', teamID='D2RFC4HAQ4', identifier='com.soulfocus.app.SoulFocus.SoulFocusMonitor', executablePath='<DVTFilePath:0xaee8d09a0:'/Users/sree/dev/SoulFocus/build/SoulFocus.xcarchive/Products/Applications/SoulFocus.app/PlugIns/SoulFocusMonitor.appex/SoulFocusMonitor'>', hardenedRuntime='0'>'> to: /var/folders/b1/tcs0zjss6lb5bywwd37njdd00000gn/T/XcodeDistPipeline.~~~Fmd3CG/entitlements~~~x71RHV
+2026-03-03 12:01:05 +0000 [MT] invoking codesign: <NSConcreteTask: 0xaec9518b0; launchPath='/usr/bin/codesign', arguments='(
+    "-f",
+    "-s",
+    C843AE3ED6A7DE7E8526F8A1A7F7F651F9449B5A,
+    "--entitlements",
+    "/var/folders/b1/tcs0zjss6lb5bywwd37njdd00000gn/T/XcodeDistPipeline.~~~Fmd3CG/entitlements~~~x71RHV",
+    "--preserve-metadata=identifier,flags,runtime,launch-constraints,library-constraints",
+    "--generate-entitlement-der",
+    "--strip-disallowed-xattrs",
+    "-vvv",
+    "/var/folders/b1/tcs0zjss6lb5bywwd37njdd00000gn/T/XcodeDistPipeline.~~~Fmd3CG/Root/Payload/SoulFocus.app/PlugIns/SoulFocusMonitor.appex"
+)'>
+2026-03-03 12:01:06 +0000 [MT] codesign output: /var/folders/b1/tcs0zjss6lb5bywwd37njdd00000gn/T/XcodeDistPipeline.~~~Fmd3CG/Root/Payload/SoulFocus.app/PlugIns/SoulFocusMonitor.appex: replacing existing signature
+/var/folders/b1/tcs0zjss6lb5bywwd37njdd00000gn/T/XcodeDistPipeline.~~~Fmd3CG/Root/Payload/SoulFocus.app/PlugIns/SoulFocusMonitor.appex: signed bundle with Mach-O thin (arm64) [com.soulfocus.app.SoulFocus.SoulFocusMonitor]
+2026-03-03 12:01:06 +0000 [MT] Entitlements for <IDEDistributionItem: 0xaebdae9a0; bundleID='com.soulfocus.app.SoulFocus', path='<DVTFilePath:0xaebd43ba0:'/Users/sree/dev/SoulFocus/build/SoulFocus.xcarchive/Products/Applications/SoulFocus.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xaebdaea00; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xaebec4240; name='Apple Development: sreedhargs1000@gmail.com (JN2M9WZGB8)', hash='C843AE3ED6A7DE7E8526F8A1A7F7F651F9449B5A', serialNumber='1208D070806467F0D457B29A3A6565F0', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-03-03 00:57:32 +0000''>', entitlements='{
+    "application-identifier" = "D2RFC4HAQ4.com.soulfocus.app.SoulFocus";
+    "com.apple.developer.healthkit" = 1;
+    "com.apple.developer.team-identifier" = D2RFC4HAQ4;
+    "com.apple.security.application-groups" =     (
+    );
+    "get-task-allow" = 1;
+}', teamID='D2RFC4HAQ4', identifier='com.soulfocus.app.SoulFocus', executablePath='<DVTFilePath:0xaebdacf00:'/Users/sree/dev/SoulFocus/build/SoulFocus.xcarchive/Products/Applications/SoulFocus.app/SoulFocus'>', hardenedRuntime='0'>'>: {
+    "application-identifier" = "D2RFC4HAQ4.com.soulfocus.app.SoulFocus";
+    "com.apple.developer.healthkit" = 1;
+    "com.apple.developer.team-identifier" = D2RFC4HAQ4;
+    "com.apple.security.application-groups" =     (
+    );
+    "get-task-allow" = 1;
+}
+2026-03-03 12:01:06 +0000 [MT] Associated App Clip Identifiers Filter: Skipping because "com.apple.developer.associated-appclip-app-identifiers" is not present
+2026-03-03 12:01:06 +0000 [MT] Entitlements for <IDEDistributionItem: 0xaebdae9a0; bundleID='com.soulfocus.app.SoulFocus', path='<DVTFilePath:0xaebd43ba0:'/Users/sree/dev/SoulFocus/build/SoulFocus.xcarchive/Products/Applications/SoulFocus.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xaebdaea00; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xaebec4000; name='Apple Development: sreedhargs1000@gmail.com (JN2M9WZGB8)', hash='C843AE3ED6A7DE7E8526F8A1A7F7F651F9449B5A', serialNumber='1208D070806467F0D457B29A3A6565F0', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-03-03 00:57:32 +0000''>', entitlements='{
+    "application-identifier" = "D2RFC4HAQ4.com.soulfocus.app.SoulFocus";
+    "com.apple.developer.healthkit" = 1;
+    "com.apple.developer.team-identifier" = D2RFC4HAQ4;
+    "com.apple.security.application-groups" =     (
+    );
+    "get-task-allow" = 1;
+}', teamID='D2RFC4HAQ4', identifier='com.soulfocus.app.SoulFocus', executablePath='<DVTFilePath:0xaebdacf00:'/Users/sree/dev/SoulFocus/build/SoulFocus.xcarchive/Products/Applications/SoulFocus.app/SoulFocus'>', hardenedRuntime='0'>'> are: {
+    "application-identifier" = "D2RFC4HAQ4.com.soulfocus.app.SoulFocus";
+    "com.apple.developer.healthkit" = 1;
+    "com.apple.developer.team-identifier" = D2RFC4HAQ4;
+    "com.apple.security.application-groups" =     (
+    );
+    "get-task-allow" = 1;
+}
+2026-03-03 12:01:06 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0xaebdae9a0; bundleID='com.soulfocus.app.SoulFocus', path='<DVTFilePath:0xaebd43ba0:'/Users/sree/dev/SoulFocus/build/SoulFocus.xcarchive/Products/Applications/SoulFocus.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xaebdaea00; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xaebec4000; name='Apple Development: sreedhargs1000@gmail.com (JN2M9WZGB8)', hash='C843AE3ED6A7DE7E8526F8A1A7F7F651F9449B5A', serialNumber='1208D070806467F0D457B29A3A6565F0', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-03-03 00:57:32 +0000''>', entitlements='{
+    "application-identifier" = "D2RFC4HAQ4.com.soulfocus.app.SoulFocus";
+    "com.apple.developer.healthkit" = 1;
+    "com.apple.developer.team-identifier" = D2RFC4HAQ4;
+    "com.apple.security.application-groups" =     (
+    );
+    "get-task-allow" = 1;
+}', teamID='D2RFC4HAQ4', identifier='com.soulfocus.app.SoulFocus', executablePath='<DVTFilePath:0xaebdacf00:'/Users/sree/dev/SoulFocus/build/SoulFocus.xcarchive/Products/Applications/SoulFocus.app/SoulFocus'>', hardenedRuntime='0'>'> to: /var/folders/b1/tcs0zjss6lb5bywwd37njdd00000gn/T/XcodeDistPipeline.~~~Fmd3CG/entitlements~~~Z7idAi
+2026-03-03 12:01:06 +0000 [MT] invoking codesign: <NSConcreteTask: 0xaec952030; launchPath='/usr/bin/codesign', arguments='(
+    "-f",
+    "-s",
+    C843AE3ED6A7DE7E8526F8A1A7F7F651F9449B5A,
+    "--entitlements",
+    "/var/folders/b1/tcs0zjss6lb5bywwd37njdd00000gn/T/XcodeDistPipeline.~~~Fmd3CG/entitlements~~~Z7idAi",
+    "--preserve-metadata=identifier,flags,runtime,launch-constraints,library-constraints",
+    "--generate-entitlement-der",
+    "--strip-disallowed-xattrs",
+    "-vvv",
+    "/var/folders/b1/tcs0zjss6lb5bywwd37njdd00000gn/T/XcodeDistPipeline.~~~Fmd3CG/Root/Payload/SoulFocus.app"
+)'>
+2026-03-03 12:01:06 +0000 [MT] codesign output: /var/folders/b1/tcs0zjss6lb5bywwd37njdd00000gn/T/XcodeDistPipeline.~~~Fmd3CG/Root/Payload/SoulFocus.app: replacing existing signature
+/var/folders/b1/tcs0zjss6lb5bywwd37njdd00000gn/T/XcodeDistPipeline.~~~Fmd3CG/Root/Payload/SoulFocus.app: signed app bundle with Mach-O thin (arm64) [com.soulfocus.app.SoulFocus]
+2026-03-03 12:01:06 +0000 [MT] Processing step: IDEDistributionZipODRItemStep
+2026-03-03 12:01:06 +0000 [MT] Skipping step: IDEDistributionZipODRItemStep because it said so
+2026-03-03 12:01:06 +0000 [MT] Skipping step: IDEDistributionZipODRItemStep because it said so
+2026-03-03 12:01:06 +0000 [MT] Processing step: IDEDistributionCreateIPAStep
+2026-03-03 12:01:06 +0000 [MT] Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/b1/tcs0zjss6lb5bywwd37njdd00000gn/T/XcodeDistPipeline.~~~Fmd3CG/Root' '/var/folders/b1/tcs0zjss6lb5bywwd37njdd00000gn/T/XcodeDistPipeline.~~~Fmd3CG/Packages/SoulFocus.ipa'
+2026-03-03 12:01:06 +0000  >>> Copying /var/folders/b1/tcs0zjss6lb5bywwd37njdd00000gn/T/XcodeDistPipeline.~~~Fmd3CG/Root 
+2026-03-03 12:01:06 +0000  copying file ./Payload/SoulFocus.app/_CodeSignature/CodeResources ... 
+2026-03-03 12:01:06 +0000  5701 bytes for ./Payload/SoulFocus.app/_CodeSignature/CodeResources
+2026-03-03 12:01:06 +0000  copying file ./Payload/SoulFocus.app/SoulFocus ... 
+2026-03-03 12:01:06 +0000  453712 bytes for ./Payload/SoulFocus.app/SoulFocus
+2026-03-03 12:01:06 +0000  copying file ./Payload/SoulFocus.app/Krishna.mp3 ... 
+2026-03-03 12:01:06 +0000  499586 bytes for ./Payload/SoulFocus.app/Krishna.mp3
+2026-03-03 12:01:06 +0000  copying file ./Payload/SoulFocus.app/PlugIns/SoulFocusMonitor.appex/_CodeSignature/CodeResources ... 
+2026-03-03 12:01:06 +0000  2040 bytes for ./Payload/SoulFocus.app/PlugIns/SoulFocusMonitor.appex/_CodeSignature/CodeResources
+2026-03-03 12:01:06 +0000  copying file ./Payload/SoulFocus.app/PlugIns/SoulFocusMonitor.appex/SoulFocusMonitor ... 
+2026-03-03 12:01:06 +0000  86896 bytes for ./Payload/SoulFocus.app/PlugIns/SoulFocusMonitor.appex/SoulFocusMonitor
+2026-03-03 12:01:06 +0000  copying file ./Payload/SoulFocus.app/PlugIns/SoulFocusMonitor.appex/embedded.mobileprovision ... 
+2026-03-03 12:01:06 +0000  12621 bytes for ./Payload/SoulFocus.app/PlugIns/SoulFocusMonitor.appex/embedded.mobileprovision
+2026-03-03 12:01:06 +0000  copying file ./Payload/SoulFocus.app/PlugIns/SoulFocusMonitor.appex/Info.plist ... 
+2026-03-03 12:01:06 +0000  994 bytes for ./Payload/SoulFocus.app/PlugIns/SoulFocusMonitor.appex/Info.plist
+2026-03-03 12:01:06 +0000  copying file ./Payload/SoulFocus.app/BUILD_AND_DISTRIBUTE.md ... 
+2026-03-03 12:01:06 +0000  8607 bytes for ./Payload/SoulFocus.app/BUILD_AND_DISTRIBUTE.md
+2026-03-03 12:01:06 +0000  copying file ./Payload/SoulFocus.app/SoulFocus.momd/VersionInfo.plist ... 
+2026-03-03 12:01:06 +0000  532 bytes for ./Payload/SoulFocus.app/SoulFocus.momd/VersionInfo.plist
+2026-03-03 12:01:06 +0000  copying file ./Payload/SoulFocus.app/SoulFocus.momd/SoulFocus.omo ... 
+2026-03-03 12:01:06 +0000  16552 bytes for ./Payload/SoulFocus.app/SoulFocus.momd/SoulFocus.omo
+2026-03-03 12:01:06 +0000  copying file ./Payload/SoulFocus.app/SoulFocus.momd/SoulFocus.mom ... 
+2026-03-03 12:01:06 +0000  7612 bytes for ./Payload/SoulFocus.app/SoulFocus.momd/SoulFocus.mom
+2026-03-03 12:01:06 +0000  copying file ./Payload/SoulFocus.app/ERRORS_FIXED_README.md ... 
+2026-03-03 12:01:06 +0000  4309 bytes for ./Payload/SoulFocus.app/ERRORS_FIXED_README.md
+2026-03-03 12:01:06 +0000  copying file ./Payload/SoulFocus.app/Gayatri.mp3 ... 
+2026-03-03 12:01:06 +0000  220147 bytes for ./Payload/SoulFocus.app/Gayatri.mp3
+2026-03-03 12:01:06 +0000  copying file ./Payload/SoulFocus.app/BUILD_STEPS.md ... 
+2026-03-03 12:01:06 +0000  7623 bytes for ./Payload/SoulFocus.app/BUILD_STEPS.md
+2026-03-03 12:01:06 +0000  copying file ./Payload/SoulFocus.app/FIX_ERRORS.md ... 
+2026-03-03 12:01:06 +0000  5944 bytes for ./Payload/SoulFocus.app/FIX_ERRORS.md
+2026-03-03 12:01:06 +0000  copying file ./Payload/SoulFocus.app/Shivay.mp3 ... 
+2026-03-03 12:01:06 +0000  643903 bytes for ./Payload/SoulFocus.app/Shivay.mp3
+2026-03-03 12:01:06 +0000  copying file ./Payload/SoulFocus.app/Om.mp3 ... 
+2026-03-03 12:01:06 +0000  362507 bytes for ./Payload/SoulFocus.app/Om.mp3
+2026-03-03 12:01:06 +0000  copying file ./Payload/SoulFocus.app/embedded.mobileprovision ... 
+2026-03-03 12:01:06 +0000  13096 bytes for ./Payload/SoulFocus.app/embedded.mobileprovision
+2026-03-03 12:01:06 +0000  copying file ./Payload/SoulFocus.app/Info.plist ... 
+2026-03-03 12:01:06 +0000  1252 bytes for ./Payload/SoulFocus.app/Info.plist
+2026-03-03 12:01:06 +0000  copying file ./Payload/SoulFocus.app/PkgInfo ... 
+2026-03-03 12:01:06 +0000  8 bytes for ./Payload/SoulFocus.app/PkgInfo
+2026-03-03 12:01:06 +0000 [MT] /usr/bin/ditto exited with 0
+2026-03-03 12:01:06 +0000 [MT] Processing step: IDEDistributionAppStoreInformationStep
+2026-03-03 12:01:06 +0000 [MT] Skipping step: IDEDistributionAppStoreInformationStep because it said so
+2026-03-03 12:01:06 +0000 [MT] Processing step: IDEDistributionGenerateProcessedDistributionItems
+2026-03-03 12:01:06 +0000 [MT] IDEDistributionItem init <DVTFilePath:0xaee9f51f0:'/var/folders/b1/tcs0zjss6lb5bywwd37njdd00000gn/T/XcodeDistPipeline.~~~Fmd3CG/Root/Payload/SoulFocus.app/PlugIns/SoulFocusMonitor.appex'>
+2026-03-03 12:01:06 +0000 [MT] IDEDistributionItem init <DVTFilePath:0xaec810180:'/var/folders/b1/tcs0zjss6lb5bywwd37njdd00000gn/T/XcodeDistPipeline.~~~Fmd3CG/Root/Payload/SoulFocus.app'>
+2026-03-03 12:01:06 +0000 [MT] Processing step: IDEDistributionCreateManifestStep

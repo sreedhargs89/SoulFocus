@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="NO" userDefinedModelVersionIdentifier="">
+
+    <!-- ─────────────────────────────────────────────────
+         ENTITY: MeditationSession
+         One row per session the user starts.
+    ───────────────────────────────────────────────── -->
+    <entity name="MeditationSession" representedClassName="MeditationSession" syncable="YES">
+        <attribute name="id"                        optional="NO"  attributeType="UUID"       usesScalarValueType="NO"/>
+        <attribute name="mode"                      optional="NO"  attributeType="String"/>
+        <attribute name="startTime"                 optional="NO"  attributeType="Date"        usesScalarValueType="NO"/>
+        <attribute name="endTime"                   optional="YES" attributeType="Date"        usesScalarValueType="NO"/>
+        <attribute name="durationPlanned"           optional="NO"  attributeType="Integer 32"  defaultValueString="600"  usesScalarValueType="YES"/>
+        <attribute name="durationActual"            optional="NO"  attributeType="Integer 32"  defaultValueString="0"    usesScalarValueType="YES"/>
+        <attribute name="wasCompleted"              optional="NO"  attributeType="Boolean"     defaultValueString="NO"   usesScalarValueType="YES"/>
+        <attribute name="wasInterrupted"            optional="NO"  attributeType="Boolean"     defaultValueString="NO"   usesScalarValueType="YES"/>
+        <attribute name="distractionBlockingEnabled" optional="NO" attributeType="Boolean"     defaultValueString="NO"   usesScalarValueType="YES"/>
+        <attribute name="moodBefore"                optional="YES" attributeType="Integer 16"  defaultValueString="0"    usesScalarValueType="YES"/>
+        <attribute name="moodAfter"                 optional="YES" attributeType="Integer 16"  defaultValueString="0"    usesScalarValueType="YES"/>
+        <attribute name="ambientSoundID"            optional="YES" attributeType="String"/>
+        <attribute name="chantID"                   optional="YES" attributeType="String"/>
+        <relationship name="journalEntry" optional="YES" maxCount="1" deletionRule="Cascade"
+                      destinationEntity="JournalEntry"
+                      inverseName="session" inverseEntity="JournalEntry"/>
+    </entity>
+
+    <!-- ─────────────────────────────────────────────────
+         ENTITY: JournalEntry
+         Optional post-session reflection note.
+    ───────────────────────────────────────────────── -->
+    <entity name="JournalEntry" representedClassName="JournalEntry" syncable="YES">
+        <attribute name="id"        optional="NO"  attributeType="UUID"   usesScalarValueType="NO"/>
+        <attribute name="createdAt" optional="NO"  attributeType="Date"   usesScalarValueType="NO"/>
+        <attribute name="updatedAt" optional="NO"  attributeType="Date"   usesScalarValueType="NO"/>
+        <attribute name="title"     optional="YES" attributeType="String"/>
+        <attribute name="body"      optional="NO"  attributeType="String"/>
+        <attribute name="mood"      optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="tags"      optional="YES" attributeType="String"/>
+        <relationship name="session" optional="YES" maxCount="1" deletionRule="Nullify"
+                      destinationEntity="MeditationSession"
+                      inverseName="journalEntry" inverseEntity="MeditationSession"/>
+    </entity>
+
+    <!-- ─────────────────────────────────────────────────
+         ENTITY: Streak
+         Singleton — only one row ever exists.
+         Tracks consecutive-day practice metrics.
+    ───────────────────────────────────────────────── -->
+    <entity name="Streak" representedClassName="Streak" syncable="YES">
+        <attribute name="id"                    optional="NO"  attributeType="UUID"       usesScalarValueType="NO"/>
+        <attribute name="currentStreak"         optional="NO"  attributeType="Integer 32"  defaultValueString="0"  usesScalarValueType="YES"/>
+        <attribute name="longestStreak"         optional="NO"  attributeType="Integer 32"  defaultValueString="0"  usesScalarValueType="YES"/>
+        <attribute name="lastSessionDate"       optional="YES" attributeType="Date"        usesScalarValueType="NO"/>
+        <attribute name="totalSessionCount"     optional="NO"  attributeType="Integer 32"  defaultValueString="0"  usesScalarValueType="YES"/>
+        <attribute name="totalMeditationSeconds" optional="NO" attributeType="Integer 64"  defaultValueString="0"  usesScalarValueType="YES"/>
+        <attribute name="startDate"             optional="NO"  attributeType="Date"        usesScalarValueType="NO"/>
+    </entity>
+
+    <!-- ─────────────────────────────────────────────────
+         ENTITY: Reminder
+         Scheduled local notification reminders.
+    ───────────────────────────────────────────────── -->
+    <entity name="Reminder" representedClassName="Reminder" syncable="YES">
+        <attribute name="id"             optional="NO"  attributeType="UUID"       usesScalarValueType="NO"/>
+        <attribute name="label"          optional="NO"  attributeType="String"/>
+        <attribute name="hour"           optional="NO"  attributeType="Integer 16"  defaultValueString="8"  usesScalarValueType="YES"/>
+        <attribute name="minute"         optional="NO"  attributeType="Integer 16"  defaultValueString="0"  usesScalarValueType="YES"/>
+        <attribute name="repeatDays"     optional="NO"  attributeType="String"      defaultValueString="1,2,3,4,5,6,7"/>
+        <attribute name="isEnabled"      optional="NO"  attributeType="Boolean"     defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="notificationID" optional="NO"  attributeType="String"/>
+        <attribute name="soundName"      optional="YES" attributeType="String"/>
+        <attribute name="createdAt"      optional="NO"  attributeType="Date"        usesScalarValueType="NO"/>
+    </entity>
+
+    <!-- ─────────────────────────────────────────────────
+         ENTITY: UserPreferences
+         Singleton — only one row ever exists.
+         App-wide settings and onboarding state.
+    ───────────────────────────────────────────────── -->
+    <entity name="UserPreferences" representedClassName="UserPreferences" syncable="YES">
+        <attribute name="id"                       optional="NO"  attributeType="UUID"       usesScalarValueType="NO"/>
+        <attribute name="selectedTheme"            optional="NO"  attributeType="String"      defaultValueString="calm"/>
+        <attribute name="defaultSessionMode"       optional="NO"  attributeType="String"      defaultValueString="meditation"/>
+        <attribute name="defaultDurationSeconds"   optional="NO"  attributeType="Integer 32"  defaultValueString="600"  usesScalarValueType="YES"/>
+        <attribute name="defaultAmbientSoundID"    optional="YES" attributeType="String"/>
+        <attribute name="distractionBlockingEnabled" optional="NO" attributeType="Boolean"    defaultValueString="NO"   usesScalarValueType="YES"/>
+        <attribute name="blockedAppsData"          optional="YES" attributeType="Binary"/>
+        <attribute name="hasCompletedOnboarding"   optional="NO"  attributeType="Boolean"     defaultValueString="NO"   usesScalarValueType="YES"/>
+        <attribute name="hasRequestedHealthKit"    optional="NO"  attributeType="Boolean"     defaultValueString="NO"   usesScalarValueType="YES"/>
+        <attribute name="trialStartDate"           optional="YES" attributeType="Date"        usesScalarValueType="NO"/>
+        <attribute name="premiumProductID"         optional="YES" attributeType="String"/>
+        <attribute name="appOpenCount"             optional="NO"  attributeType="Integer 32"  defaultValueString="0"    usesScalarValueType="YES"/>
+    </entity>
+
+</model>
