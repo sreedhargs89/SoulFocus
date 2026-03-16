@@ -4,16 +4,263 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SoulFocus | Your Sacred Journey</title>
-    <meta name="description"
-        content="SoulFocus is a premium mindfulness and spiritual app featuring meditation, prayer, and chanting. Find your rhythm.">
+    <title>SoulFocus | Meditation, Prayer & Chanting</title>
+    <meta name="description" content="SoulFocus is a spiritual companion app for Meditation, Prayer, and Chanting. Available now on iOS.">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        /* ── Screenshot Grid ── */
+        .screenshots-section {
+            padding: 80px 24px;
+            text-align: center;
+        }
+        .screenshots-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.8rem, 4vw, 2.6rem);
+            color: var(--ink-warm);
+            margin-bottom: 12px;
+        }
+        .screenshots-section .sub {
+            color: var(--sienna);
+            opacity: 0.75;
+            font-size: 1rem;
+            margin-bottom: 52px;
+        }
+        .screenshots-grid {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .screenshot-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 14px;
+        }
+        .screenshot-item img {
+            width: 200px;
+            border-radius: 32px;
+            box-shadow: 0 24px 60px rgba(18,10,3,0.18), 0 4px 12px rgba(18,10,3,0.08);
+            transition: transform 0.35s ease, box-shadow 0.35s ease;
+        }
+        .screenshot-item img:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 36px 80px rgba(18,10,3,0.22);
+        }
+        .screenshot-item.featured img {
+            width: 230px;
+            transform: translateY(-16px);
+        }
+        .screenshot-item.featured img:hover {
+            transform: translateY(-24px) scale(1.03);
+        }
+        .screenshot-label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--sienna);
+            opacity: 0.7;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        /* ── Hero CTA ── */
+        .app-store-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--ink-warm);
+            color: #fff;
+            padding: 14px 28px;
+            border-radius: 14px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: opacity 0.2s, transform 0.2s;
+            margin-top: 8px;
+        }
+        .app-store-btn:hover { opacity: 0.85; transform: translateY(-2px); }
+        .app-store-btn i { width: 20px; height: 20px; }
+
+        .trial-badge {
+            display: inline-block;
+            background: rgba(245,148,28,0.12);
+            border: 1px solid rgba(245,148,28,0.35);
+            color: var(--saffron);
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 5px 14px;
+            border-radius: 50px;
+            margin-bottom: 20px;
+            letter-spacing: 0.04em;
+        }
+
+        /* ── Features ── */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 48px auto 0;
+            padding: 0 24px;
+        }
+        .feat-card {
+            background: rgba(255,255,255,0.5);
+            border: 1px solid rgba(230,209,178,0.45);
+            border-radius: 20px;
+            padding: 28px 24px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.25s, box-shadow 0.25s;
+        }
+        .feat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 40px rgba(18,10,3,0.1);
+        }
+        .feat-icon {
+            font-size: 2rem;
+            margin-bottom: 14px;
+        }
+        .feat-card h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--ink-warm);
+            margin-bottom: 8px;
+        }
+        .feat-card p {
+            font-size: 0.88rem;
+            color: var(--sienna);
+            opacity: 0.85;
+            line-height: 1.65;
+        }
+
+        /* ── Traditions ── */
+        .traditions-section {
+            padding: 80px 24px;
+            text-align: center;
+        }
+        .traditions-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.8rem, 4vw, 2.4rem);
+            color: var(--ink-warm);
+            margin-bottom: 10px;
+        }
+        .traditions-section .sub {
+            color: var(--sienna);
+            opacity: 0.75;
+            margin-bottom: 40px;
+        }
+        .traditions-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .tradition-pill {
+            background: rgba(255,255,255,0.55);
+            border: 1px solid rgba(230,209,178,0.5);
+            border-radius: 50px;
+            padding: 10px 22px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--ink-warm);
+        }
+
+        /* ── Pricing ── */
+        .pricing-section {
+            padding: 80px 24px;
+            text-align: center;
+        }
+        .pricing-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.8rem, 4vw, 2.4rem);
+            color: var(--ink-warm);
+            margin-bottom: 10px;
+        }
+        .pricing-section .sub {
+            color: var(--sienna);
+            opacity: 0.75;
+            margin-bottom: 48px;
+        }
+        .pricing-cards {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 860px;
+            margin: 0 auto;
+        }
+        .price-card {
+            background: rgba(255,255,255,0.5);
+            border: 1px solid rgba(230,209,178,0.45);
+            border-radius: 24px;
+            padding: 32px 28px;
+            min-width: 220px;
+            flex: 1;
+            max-width: 260px;
+            position: relative;
+            transition: transform 0.25s;
+        }
+        .price-card:hover { transform: translateY(-4px); }
+        .price-card.featured {
+            background: linear-gradient(135deg, rgba(245,148,28,0.1), rgba(224,112,10,0.08));
+            border-color: rgba(245,148,28,0.4);
+        }
+        .price-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--saffron), var(--saff-dark));
+            color: white;
+            font-size: 0.72rem;
+            font-weight: 700;
+            padding: 4px 14px;
+            border-radius: 50px;
+            white-space: nowrap;
+        }
+        .price-card h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--ink-warm);
+            margin-bottom: 8px;
+        }
+        .price-amount {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--saffron);
+            margin-bottom: 6px;
+        }
+        .price-detail {
+            font-size: 0.8rem;
+            color: var(--sienna);
+            opacity: 0.75;
+            line-height: 1.5;
+        }
+        .price-free-tag {
+            display: inline-block;
+            background: rgba(245,148,28,0.12);
+            border: 1px solid rgba(245,148,28,0.3);
+            color: var(--saffron);
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 50px;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 640px) {
+            .screenshot-item img { width: 150px; }
+            .screenshot-item.featured img { width: 170px; }
+        }
+    </style>
 </head>
 
 <body>
@@ -30,12 +277,15 @@
         <a href="#features" class="nav-link">Discover</a>
     </nav>
 
+    <!-- HERO -->
     <header class="hero">
         <div class="hero-content fade-in">
+            <span class="trial-badge">✦ 7-Day Free Trial</span>
             <h1 class="hero-title">Your sacred journey continues.</h1>
-            <p class="hero-subtitle">A beautifully crafted sanctuary designed by Apple design standards for Meditation,
-                Prayer, and Chanting.</p>
-            <button class="cta-button">Coming Soon to iOS</button>
+            <p class="hero-subtitle">A beautifully crafted spiritual companion for Meditation, Prayer, and Chanting — designed for every tradition.</p>
+            <a href="https://apps.apple.com/app/soulfocus/id6743745002" class="app-store-btn">
+                <i data-feather="smartphone"></i> Download on the App Store
+            </a>
         </div>
 
         <div class="hero-visual">
@@ -43,13 +293,12 @@
                 <div class="phone-screen">
                     <div class="app-header">
                         <h2>Good Evening 🌙</h2>
-                        <p>Peace be with you.</p>
+                        <p>Your sacred journey continues.</p>
                     </div>
                     <div class="app-quote">
                         <div class="quote-line"></div>
                         <div>
-                            <p class="quote-text">"You are not a drop in the ocean. You are the entire ocean in a drop."
-                            </p>
+                            <p class="quote-text">"You are not a drop in the ocean. You are the entire ocean in a drop."</p>
                             <p class="quote-author">— Rumi</p>
                         </div>
                     </div>
@@ -75,122 +324,165 @@
         </div>
     </header>
 
-    <section id="features" class="detailed-features">
-        <!-- Meditation -->
+    <!-- SCREENSHOTS -->
+    <section class="screenshots-section fade-in">
+        <h2>See it in action</h2>
+        <p class="sub">Every screen crafted with care, calm, and intention.</p>
+        <div class="screenshots-grid">
+            <div class="screenshot-item">
+                <img src="screenshot-onboarding.png" alt="Choose your spiritual tradition" loading="lazy">
+                <span class="screenshot-label">Your Tradition</span>
+            </div>
+            <div class="screenshot-item featured">
+                <img src="screenshot-home.png" alt="SoulFocus Home Screen" loading="lazy">
+                <span class="screenshot-label">Home</span>
+            </div>
+            <div class="screenshot-item featured">
+                <img src="screenshot-prayer.png" alt="Gayatri Mantra Prayer Session" loading="lazy">
+                <span class="screenshot-label">Prayer</span>
+            </div>
+            <div class="screenshot-item">
+                <img src="screenshot-meditation.png" alt="Meditation Setup" loading="lazy">
+                <span class="screenshot-label">Meditation</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="fade-in" style="padding: 20px 0 60px; text-align:center;">
+        <h2 style="font-family:'Playfair Display',serif; font-size:clamp(1.8rem,4vw,2.6rem); color:var(--ink-warm); padding: 0 24px;">Everything your practice needs</h2>
+        <p style="color:var(--sienna); opacity:0.75; margin-top:10px; padding:0 24px;">Built with depth, simplicity, and reverence.</p>
+        <div class="features-grid">
+            <div class="feat-card">
+                <div class="feat-icon">🧘</div>
+                <h3>Meditation Timer</h3>
+                <p>Sessions from 1 to 30 minutes with breathing guides — Box (4-4-4-4), 4-7-8, Natural, and Free Awareness. Set interval bells to stay anchored.</p>
+            </div>
+            <div class="feat-card">
+                <div class="feat-icon">🙏</div>
+                <h3>Sacred Prayer</h3>
+                <p>Full prayer sessions for your tradition with original script, transliteration, and English translation. Distraction-free, full-screen focus mode.</p>
+            </div>
+            <div class="feat-card">
+                <div class="feat-icon">📿</div>
+                <h3>Mantra & Chanting</h3>
+                <p>Chant sacred mantras with rhythmic audio support. Om, Gayatri Mantra, Hare Krishna, Om Namah Shivaya and more — looped seamlessly.</p>
+            </div>
+            <div class="feat-card">
+                <div class="feat-icon">🔥</div>
+                <h3>Streaks & History</h3>
+                <p>Track your daily streak, total sessions, and total time practiced. Your consistency becomes your motivation.</p>
+            </div>
+            <div class="feat-card">
+                <div class="feat-icon">📖</div>
+                <h3>Session Journal</h3>
+                <p>Capture reflections after each session. Build a personal record of your spiritual journey over time.</p>
+            </div>
+            <div class="feat-card">
+                <div class="feat-icon">🎯</div>
+                <h3>Set Your Intention</h3>
+                <p>Begin every meditation with a clear intention — Peace, Clarity, or Gratitude. A small act that transforms the entire session.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRADITIONS -->
+    <section class="traditions-section fade-in">
+        <h2>For every tradition</h2>
+        <p class="sub">SoulFocus honours all paths to the divine.</p>
+        <div class="traditions-row">
+            <span class="tradition-pill">🕉 Hindu</span>
+            <span class="tradition-pill">✝️ Christian</span>
+            <span class="tradition-pill">☸️ Buddhist</span>
+            <span class="tradition-pill">☪️ Islam</span>
+            <span class="tradition-pill">🌍 Universal</span>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing-section fade-in">
+        <h2>Simple, honest pricing</h2>
+        <p class="sub">Start free. Upgrade when you're ready.</p>
+        <div class="pricing-cards">
+            <div class="price-card">
+                <h3>Monthly</h3>
+                <div class="price-amount">$4.99</div>
+                <div class="price-detail">Billed monthly<br>Cancel anytime</div>
+            </div>
+            <div class="price-card featured">
+                <div class="price-badge">Best Value</div>
+                <h3>Annual</h3>
+                <div class="price-amount">$29.99</div>
+                <div class="price-detail">Save over 50%<br>vs monthly</div>
+                <span class="price-free-tag">7-day free trial</span>
+            </div>
+            <div class="price-card">
+                <h3>Lifetime</h3>
+                <div class="price-amount">$59.99</div>
+                <div class="price-detail">Pay once<br>Use forever</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DETAILED FEATURES -->
+    <section id="deep-features" class="detailed-features">
         <div class="feature-row fade-in">
             <div class="feature-text">
                 <span class="feature-badge"><i data-feather="wind"></i> Inner Stillness</span>
                 <h2>Meditation & Breathwork</h2>
-                <p>Find your center with highly customizable meditation sessions designed to anchor your mind and relax
-                    your nervous system. Whether you have one minute or one hour, SoulFocus adapts to your needs.</p>
+                <p>Choose your duration (1 to 30 minutes), pick a breathing guide, set an intention, and begin. SoulFocus gets out of the way so you can go in.</p>
                 <ul class="feature-list">
-                    <li><strong>Guided Breathing Cycles:</strong> Choose from Box Breathing (4-4-4-4), 4-7-8 Relaxation,
-                        or Awaken rhythms. An expanding and contracting visual orb intuitively guides the pace of every
-                        breath.</li>
-                    <li><strong>Ambient Soundscapes:</strong> Immersive, high-quality background audio tracks like
-                        'Rainfall', 'Forest', 'Ocean', and 'Deep Space' quickly drown out external distractions.</li>
-                    <li><strong>Interval Bells:</strong> Enable soft, resonant singing bowl chimes at 1, 3, 5, or
-                        10-minute marks to gently bring a wandering mind back to the present moment.</li>
+                    <li><strong>Breathing Guides:</strong> Box breathing (4-4-4-4) for focus and calm, 4-7-8 for anxiety relief, Natural (5-7) for gentle ease, or No Guide for free awareness.</li>
+                    <li><strong>Ambient Sound:</strong> Singing bowl ambient audio with reverb — synthesised on-device, plays in the background even when your phone is locked.</li>
+                    <li><strong>Interval Bells:</strong> Gentle reminders at 2, 5, or 10 minute marks to bring a wandering mind back to the present.</li>
                 </ul>
             </div>
             <div class="feature-visual">
-                <div class="feature-icon-large">🌿</div>
+                <img src="screenshot-meditation.png" alt="Meditation screen" style="width:200px; border-radius:28px; box-shadow:0 20px 50px rgba(18,10,3,0.15);">
             </div>
         </div>
 
-        <!-- Prayer -->
         <div class="feature-row reverse fade-in">
             <div class="feature-text">
                 <span class="feature-badge"><i data-feather="heart"></i> Devotion</span>
                 <h2>Sacred Prayer Traditions</h2>
-                <p>Speak from the heart. SoulFocus deeply respects and honors the world's great faith paths, offering
-                    beautifully curated prayer texts spanning all major spiritual traditions.</p>
+                <p>Speak from the heart. SoulFocus presents prayers in their original script alongside transliteration and translation — so you can connect deeply regardless of language.</p>
                 <ul class="feature-list">
-                    <li><strong>Global Faiths:</strong> Access universally beloved foundational prayers from the Hindu
-                        (Gayatri Mantra), Christian (The Lord's Prayer), Buddhist (Metta), Islamic (Al-Fatiha), and
-                        Universal (Serenity Prayer) traditions.</li>
-                    <li><strong>Multilingual Support:</strong> Experience the original Sanskrit or Arabic recitations
-                        alongside accessible transliterations and profound English translations.</li>
-                    <li><strong>Distraction-Free Focus:</strong> Built-in dynamic session timers and immersive,
-                        full-screen translucent cards allow you to pray without ever checking a physical clock or being
-                        interrupted.</li>
+                    <li><strong>Gayatri Mantra:</strong> Original Sanskrit (ॐ भूर्भुवः स्वः), transliteration, and full meaning — line by line.</li>
+                    <li><strong>5 Traditions:</strong> Hindu, Christian, Buddhist, Islamic, and Universal prayers — each with its own visual identity.</li>
+                    <li><strong>Session Timer:</strong> A built-in countdown so you stay present without ever checking the time.</li>
                 </ul>
             </div>
             <div class="feature-visual">
-                <div class="feature-icon-large">🙏</div>
-            </div>
-        </div>
-
-        <!-- Chanting -->
-        <div class="feature-row fade-in">
-            <div class="feature-text">
-                <span class="feature-badge"><i data-feather="activity"></i> Vibration</span>
-                <h2>Mantra & Chanting</h2>
-                <p>Elevate your spiritual frequency by chanting sacred names. Experience the rhythmic power of ancient
-                    sounds designed to align your mind, body, and spirit.</p>
-                <ul class="feature-list">
-                    <li><strong>Zero-Gap Looping:</strong> SoulFocus utilizes a highly advanced, custom-built audio
-                        engine that trims encoder delays—ensuring your mantras loop infinitely with zero auditory gaps
-                        or stuttering.</li>
-                    <li><strong>Powerful Audio Mantras:</strong> Practice alongside embedded high-fidelity audio for
-                        powerful chants such as the primordial 'Om', the 'Gayatri Mantra', 'Hare Krishna', and 'Om Namah
-                        Shivaya'.</li>
-                    <li><strong>Haptic Synergy:</strong> Sync your physical body to your spiritual focus. Every
-                        interaction utilizes Apple's advanced Taptic Engine to provide subtle, grounding physical
-                        feedback.</li>
-                </ul>
-            </div>
-            <div class="feature-visual">
-                <div class="feature-icon-large">📿</div>
+                <img src="screenshot-prayer.png" alt="Prayer screen" style="width:200px; border-radius:28px; box-shadow:0 20px 50px rgba(18,10,3,0.15);">
             </div>
         </div>
     </section>
 
     <footer>
-        <p>© 2026 SoulFocus. Peace in all directions.</p>
+        <p>© 2026 SoulFocus. Peace in all directions. &nbsp;·&nbsp; <a href="support.html" style="color:var(--saffron); text-decoration:none;">Support</a></p>
     </footer>
 
     <script>
-        // Initialize Feather icons
         feather.replace();
 
-        // Scroll Progress Bar
         window.onscroll = function () {
             var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
             var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            var scrolled = (winScroll / height) * 100;
-            document.getElementById("progressBar").style.width = scrolled + "%";
-
-            // Orbs Parallax
+            document.getElementById("progressBar").style.width = ((winScroll / height) * 100) + "%";
             document.querySelector('.glow-orb').style.transform = `translateY(${winScroll * 0.15}px)`;
             document.querySelector('.glow-orb-2').style.transform = `translateY(${winScroll * -0.05}px)`;
         };
 
-        // Intersection Observer for Fade-In animations
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.15
-        };
-
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
             });
-        }, observerOptions);
+        }, { threshold: 0.12 });
 
-        document.querySelectorAll('.fade-in').forEach((el) => {
-            observer.observe(el);
-        });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-        // Trigger initial phone hover animation programmatically on load for effect
-        setTimeout(() => {
-            document.querySelector('.phone-mockup').classList.add('floating');
-        }, 500);
-
+        setTimeout(() => document.querySelector('.phone-mockup').classList.add('floating'), 500);
     </script>
 </body>
 
