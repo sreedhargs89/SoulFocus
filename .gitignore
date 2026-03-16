@@ -1,0 +1,5 @@
+SoulFocus/
+SoulFocusMonitor/
+SoulFocusTests/
+build/
+*.xcarchive/
