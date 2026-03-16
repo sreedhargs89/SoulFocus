@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoulFocus | Support</title>
+    <meta name="description" content="Get help with SoulFocus — meditation, prayer, and chanting app for iOS.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .support-hero {
+            text-align: center;
+            padding: 100px 24px 60px;
+        }
+        .support-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: var(--ink-warm);
+            margin-bottom: 16px;
+        }
+        .support-hero p {
+            font-size: 1.1rem;
+            color: var(--sienna);
+            opacity: 0.8;
+            max-width: 520px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+        .support-container {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 0 24px 80px;
+        }
+        .support-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-bord);
+            border-radius: 20px;
+            padding: 32px;
+            margin-bottom: 24px;
+            backdrop-filter: blur(10px);
+        }
+        .support-card h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--ink-warm);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .support-card h2 i {
+            color: var(--saffron);
+            width: 22px;
+            height: 22px;
+        }
+        .faq-item {
+            padding: 16px 0;
+            border-bottom: 1px solid rgba(230, 209, 178, 0.4);
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .faq-item:first-child {
+            padding-top: 0;
+        }
+        .faq-q {
+            font-weight: 600;
+            color: var(--ink-warm);
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+        .faq-a {
+            color: var(--sienna);
+            opacity: 0.85;
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, var(--saffron), var(--saff-dark));
+            color: white;
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            margin-top: 8px;
+            transition: opacity 0.2s, transform 0.2s;
+        }
+        .contact-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--saffron);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 32px;
+        }
+        .back-link:hover { opacity: 0.75; }
+    </style>
+</head>
+
+<body>
+    <div class="glow-orb"></div>
+    <div class="glow-orb-2"></div>
+
+    <nav class="navbar fade-in">
+        <div class="logo">
+            <i data-feather="sun" class="icon-saffron"></i> SoulFocus
+        </div>
+        <a href="index.html" class="nav-link">Home</a>
+    </nav>
+
+    <div class="support-hero fade-in">
+        <h1>How can we help?</h1>
+        <p>Find answers to common questions or reach out to us directly. We're here to support your practice.</p>
+    </div>
+
+    <div class="support-container">
+        <a href="index.html" class="back-link">
+            <i data-feather="arrow-left"></i> Back to Home
+        </a>
+
+        <!-- FAQ -->
+        <div class="support-card">
+            <h2><i data-feather="help-circle"></i> Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <div class="faq-q">How do I start my free trial?</div>
+                <div class="faq-a">Your 7-day free trial begins automatically when you first launch SoulFocus. No credit card is required to start. You'll have full access to all premium features during the trial period.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">How do I cancel my subscription?</div>
+                <div class="faq-a">Go to your iPhone Settings → Apple ID → Subscriptions → SoulFocus → Cancel Subscription. You can cancel anytime and will retain access until the end of the billing period.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">How do I restore my purchases on a new device?</div>
+                <div class="faq-a">Open SoulFocus → tap the upgrade/paywall screen → tap "Restore Purchases" at the bottom. Make sure you're signed in with the same Apple ID used for the original purchase.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Why isn't the audio playing during meditation?</div>
+                <div class="faq-a">Check that your iPhone is not on Silent mode (the physical switch on the side). Also ensure SoulFocus has permission to play audio in the background via Settings → SoulFocus.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Which prayer traditions are supported?</div>
+                <div class="faq-a">SoulFocus supports Hindu, Buddhist, Christian, Islamic, and Sikh traditions, with tailored prayer modes and chanting for each. More traditions will be added in future updates.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Is my data private?</div>
+                <div class="faq-a">Yes. All your session history, journal entries, and streaks are stored locally on your device using CoreData. We do not collect, store, or share any personal data on external servers.</div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="support-card">
+            <h2><i data-feather="mail"></i> Contact Us</h2>
+            <p style="color: var(--sienna); opacity: 0.85; font-size: 0.95rem; line-height: 1.7; margin-bottom: 20px;">
+                Can't find what you're looking for? We typically respond within 24 hours.
+            </p>
+            <a href="mailto:sreedhargs1000@gmail.com" class="contact-btn">
+                <i data-feather="send"></i> Email Support
+            </a>
+        </div>
+
+        <!-- App Info -->
+        <div class="support-card">
+            <h2><i data-feather="info"></i> App Information</h2>
+            <div class="faq-item">
+                <div class="faq-q">Version</div>
+                <div class="faq-a">1.0</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">Compatibility</div>
+                <div class="faq-a">Requires iOS 16.6 or later. Compatible with iPhone.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">Developer</div>
+                <div class="faq-a">SoulFocus — sreedhargs1000@gmail.com</div>
+            </div>
+        </div>
+    </div>
+
+    <script>feather.replace();</script>
+</body>
+
+</html>
