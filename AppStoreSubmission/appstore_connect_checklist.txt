@@ -1,0 +1,88 @@
+===========================
+APP STORE CONNECT CHECKLIST
+===========================
+Complete these steps at appstoreconnect.apple.com before submitting.
+
+─── 1. CREATE THE APP (if not done) ───
+□ Go to My Apps → "+" → New App
+□ Platform: iOS
+□ Name: SoulFocus – Prayer & Meditation
+□ Primary Language: English
+□ Bundle ID: com.soulfocus.app.SoulFocus
+□ SKU: soulfocus-ios-001
+
+─── 2. APP INFORMATION ───
+□ Subtitle: Focused Prayer & Meditation
+□ Category (Primary): Health & Fitness
+□ Category (Secondary): Lifestyle
+□ Privacy Policy URL: https://[your-site]/privacy   ← REQUIRED
+□ Copyright: © 2026 SoulFocus
+
+─── 3. PRICING & AVAILABILITY ───
+□ Price: Free (with in-app purchases)
+□ Availability: All countries (or select specific)
+
+─── 4. IN-APP PURCHASES ───
+Create these 3 products (must match the code EXACTLY):
+
+  Product ID: soulfocus.premium.monthly
+  Type: Auto-Renewable Subscription
+  Reference Name: SoulFocus Monthly
+  Price: $4.99/month (or your chosen price)
+  Subscription Group: SoulFocus Premium
+
+  Product ID: soulfocus.premium.annual
+  Type: Auto-Renewable Subscription
+  Reference Name: SoulFocus Annual
+  Price: $29.99/year
+  Subscription Group: SoulFocus Premium
+
+  Product ID: soulfocus.premium.lifetime
+  Type: Non-Consumable
+  Reference Name: SoulFocus Lifetime
+  Price: $59.99
+
+  For each subscription, add:
+  □ Display name (shown to user)
+  □ Description
+  □ Localization (at minimum: English)
+
+─── 5. APP PRIVACY (Data section) ───
+□ Go to App Privacy → Get Started
+□ Data Not Collected → select this (the app collects no data from users)
+□ Tracking: No
+
+─── 6. VERSION INFORMATION ───
+□ Version: 1.0
+□ What's New: (leave blank for first release, or write "Initial release")
+□ Screenshots: upload per screenshots_guide.txt
+□ Description: copy from app_description.txt
+□ Keywords: copy from app_description.txt
+□ Support URL
+□ Marketing URL (optional)
+
+─── 7. BUILD ───
+□ Upload SoulFocus.ipa using Transporter (download free from Mac App Store)
+  File: /Users/sree/dev/SoulFocus/build/IPA-AppStore/SoulFocus.ipa
+□ Wait ~10-30 min for processing
+□ Select the build in App Store Connect
+
+─── 8. AGE RATING ───
+□ Complete the questionnaire → should result in 4+
+
+─── 9. SUBMIT FOR REVIEW ───
+□ All fields green → "Add for Review" → "Submit to App Review"
+□ Review time: typically 24-48 hours
+
+===========================
+TRANSPORTER UPLOAD COMMAND (alternative to GUI)
+===========================
+You can also upload using altool via command line:
+
+xcrun altool --upload-app \
+  --type ios \
+  --file /Users/sree/dev/SoulFocus/build/IPA-AppStore/SoulFocus.ipa \
+  --apiKey [YOUR_API_KEY] \
+  --apiIssuer [YOUR_ISSUER_ID]
+
+Or use Transporter app (free on Mac App Store) — drag and drop the IPA.

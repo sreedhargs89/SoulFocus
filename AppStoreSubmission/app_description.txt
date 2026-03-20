@@ -1,0 +1,82 @@
+===========================
+APP NAME
+===========================
+SoulFocus – Prayer & Meditation
+
+===========================
+SUBTITLE (30 chars max)
+===========================
+Focused Prayer & Meditation
+
+===========================
+SHORT DESCRIPTION (170 chars)
+Used on the App Store search page
+===========================
+SoulFocus helps you build a daily prayer and meditation practice with guided sessions, sacred chants, and a beautiful session journal — across all traditions.
+
+===========================
+FULL DESCRIPTION (4000 chars max)
+===========================
+SoulFocus is a focused prayer and meditation companion designed for people of every spiritual tradition.
+
+Whether you follow Hindu, Christian, Buddhist, Islamic, or universal spiritual practices — SoulFocus gives you a calm, distraction-free space to deepen your daily practice.
+
+── WHAT YOU CAN DO ──
+
+• Start a Meditation Session
+  Choose your duration, breathing style, and ambient sound. A Tibetan singing bowl gently marks your session. The countdown ring keeps you grounded without checking the clock.
+
+• Pray with Sacred Texts
+  Swipe through beautifully formatted prayer cards with the original script, transliteration, and English meaning line by line. Traditions supported: Hindu, Christian, Buddhist, Islam, Universal.
+
+• Chant with Rhythm
+  Choose from a rich library of mantras and chants. A pulsing rhythm guide helps you stay with the tempo — slow, medium, or fast — so you can chant aloud with full focus.
+
+• Track Your Streak & Progress
+  Every completed session is recorded. Watch your streak grow and see your total time in practice at a glance from the home screen.
+
+• Journal Your Sessions
+  After each session, reflect on what you felt. Your session log keeps a record of your journey over time.
+
+• 7-Day Free Trial
+  Explore every feature free for 7 days. No commitment required.
+
+── TRADITIONS SUPPORTED ──
+
+Hindu · Christian · Buddhist · Islam · Sikh · Universal
+
+── PREMIUM ──
+
+Unlock unlimited sessions, full chant library access, and detailed session history with SoulFocus Premium:
+  • Monthly subscription
+  • Annual subscription (best value)
+  • Lifetime access
+
+── DESIGNED WITH INTENTION ──
+
+SoulFocus is built around a single idea: your practice deserves a beautiful, focused space. No ads, no distractions, no noise — just you and your practice.
+
+===========================
+KEYWORDS (100 chars max, comma separated)
+===========================
+meditation,prayer,mantra,chanting,mindfulness,spiritual,Hindu,Buddhist,Christian,Islam,focus
+
+===========================
+SUPPORT URL
+===========================
+https://[your-website]/support
+
+===========================
+MARKETING URL (optional)
+===========================
+https://[your-website]
+
+===========================
+PRIVACY POLICY URL (REQUIRED for subscription apps)
+===========================
+https://[your-website]/privacy
+
+===========================
+COPYRIGHT
+===========================
+© 2026 SoulFocus

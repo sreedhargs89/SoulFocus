@@ -1,5 +1,8 @@
-SoulFocus/
-SoulFocusMonitor/
-SoulFocusTests/
 build/
 *.xcarchive/
+*.ipa
+# Xcode derived data & user-specific files
+SoulFocus/SoulFocus.xcodeproj/xcuserdata/
+SoulFocus/SoulFocus.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcuserdatad/
+DerivedData/

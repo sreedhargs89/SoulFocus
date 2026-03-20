@@ -1,0 +1,66 @@
+===========================
+PRIVACY POLICY FOR SOULFOCUS
+===========================
+
+IMPORTANT: Host this text at a public URL (e.g. your GitHub Pages site or a page
+on your website) BEFORE submitting to the App Store. You MUST provide this URL
+in App Store Connect under App Information > Privacy Policy URL.
+
+Suggested URL: https://[your-site]/privacy
+
+---
+
+Privacy Policy for SoulFocus
+Last updated: March 2026
+
+SoulFocus ("we", "our", "the app") is committed to protecting your privacy.
+This policy explains what data is collected and how it is used.
+
+1. DATA WE COLLECT
+
+   SoulFocus stores the following data ONLY on your device (never on our servers):
+   - Your selected spiritual tradition and preferences
+   - Meditation and prayer session history
+   - Your session streak and total practice time
+   - Your journal entries
+   - Your subscription status (managed by Apple)
+
+   We do NOT collect:
+   - Your name, email address, or any personal identifiers
+   - Location data
+   - Health data
+   - Device contacts, photos, or camera access
+   - Any analytics or tracking data
+
+2. THIRD-PARTY SERVICES
+
+   - Apple In-App Purchases (StoreKit): Subscription purchases are handled
+     entirely by Apple. We receive only a confirmation of purchase status.
+     Apple's privacy policy applies: https://www.apple.com/privacy/
+
+3. DATA SHARING
+
+   We do not sell, share, or transmit your data to any third party.
+   All data remains on your device.
+
+4. DATA RETENTION
+
+   All data is stored locally on your device using Apple's Core Data framework.
+   Deleting the app removes all data permanently.
+
+5. CHILDREN'S PRIVACY
+
+   SoulFocus is rated 4+ and does not knowingly collect data from children
+   under 13. No personal information is collected from any user.
+
+6. CHANGES TO THIS POLICY
+
+   We may update this policy from time to time. Changes will be posted at
+   this URL. Continued use of the app constitutes acceptance of any changes.
+
+7. CONTACT
+
+   For privacy questions, contact: [your-email@domain.com]
+
+---
+End of Privacy Policy

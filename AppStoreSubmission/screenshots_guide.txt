@@ -1,0 +1,61 @@
+===========================
+REQUIRED SCREENSHOTS
+===========================
+
+App Store requires screenshots for each device size you claim to support.
+The MINIMUM required are:
+
+  1. iPhone 6.9" (iPhone 16 Pro Max)  →  1320 × 2868 px
+  2. iPhone 6.5" (iPhone 11 Pro Max)  →  1242 × 2688 px   (can reuse 6.9" if submitted)
+  3. iPad 13"    (iPad Pro 13")       →  2064 × 2752 px   (required if iPad is supported)
+
+You declared TARGETED_DEVICE_FAMILY = 1 (iPhone only), so you only need iPhone sizes.
+
+TIP: Submit only the 6.9" size — Apple will scale it for other sizes automatically.
+
+===========================
+SCREENSHOT IDEAS (5 screens max per size)
+===========================
+
+Screen 1 — HOME / HERO
+  Show the home screen with a streak counter and session stats.
+  Headline overlay: "Your Daily Practice, Beautifully Focused"
+
+Screen 2 — MEDITATION SESSION
+  Show the active session view with the countdown ring + breathing guide.
+  Headline overlay: "Breathe. Focus. Be Present."
+
+Screen 3 — PRAYER CARDS
+  Show a prayer card (e.g. Gayatri Mantra) with Sanskrit + transliteration + English.
+  Headline overlay: "Sacred Texts from Every Tradition"
+
+Screen 4 — CHANTING
+  Show the chanting session with the pulsing rhythm guide.
+  Headline overlay: "Chant with Purpose and Rhythm"
+
+Screen 5 — PAYWALL / TRIAL
+  Show the paywall with the 7-day free trial offer.
+  Headline overlay: "7 Days Free — No Commitment"
+
+===========================
+HOW TO TAKE SCREENSHOTS
+===========================
+
+1. Run the app on an iPhone 16 Pro Max Simulator (Xcode > Simulator)
+2. Navigate to each screen listed above
+3. Press Cmd+S in Simulator to save screenshot to Desktop
+4. Use Figma, Canva, or Sketch to add headline text overlays on a branded background
+
+===========================
+APP ICON (already in project)
+===========================
+1024 × 1024 px PNG — already set as AppIcon in Assets.xcassets
+No additional action needed.
+
+===========================
+APP PREVIEW VIDEO (optional but boosts conversion)
+===========================
+  • 15–30 seconds
+  • Show: open app → home screen → start meditation session → prayer cards → chanting
+  • No voiceover required
+  • Export as .mov or .mp4, max 500MB
